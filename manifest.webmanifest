@@ -1,0 +1,15 @@
+{
+  "name": "Last Message Home",
+  "short_name": "Last Message",
+  "description": "Chat with NASA robots left on the Moon, on Mars and in deep space. Every line comes from a NASA page.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#05060f",
+  "theme_color": "#070814",
+  "lang": "en",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

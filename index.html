@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Last Message Home</title>
+<meta name="description" content="Chat with NASA robots left on the Moon, on Mars and in deep space. Every line comes from a NASA page, with a source link.">
+<meta name="theme-color" content="#070814">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon.svg">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#view" data-i18n="skip">Skip to content</a>
+
+<!-- Animated space background (decoration only) -->
+<div class="space" aria-hidden="true">
+  <div class="nebula n1"></div><div class="nebula n2"></div><div class="nebula n3"></div>
+  <div class="stars s1"></div><div class="stars s2"></div><div class="stars s3"></div>
+  <div class="shooting"></div>
+</div>
+
+<div class="phone"> 
+  <header class="bar">
+    <button id="back" class="icon-btn" type="button" aria-label="Back" data-i18n-label="back" hidden>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+    </button>
+    <div id="who" class="bar-who" hidden></div>
+    <div class="bar-title">
+      <h1 id="title">Last Message Home</h1>
+      <p id="subtitle" class="bar-sub"></p>
+    </div>
+        <button id="toggleSound" class="icon-btn sound-btn" type="button" aria-label="Sound effects" data-i18n-label="sound" title="Sound effects">
+      <svg id="soundIcon" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path class="sound-wave wave-1" d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path class="sound-wave wave-2" d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+    </button>
+    <button id="openSettings" class="icon-btn" type="button" aria-label="Settings" data-i18n-label="settings" aria-haspopup="dialog" aria-controls="settings">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>
+    </button>
+  </header>
+
+  <main id="view" tabindex="-1"></main>
+
+  <nav class="tabs" aria-label="Sections">
+    <span class="tab-glow" aria-hidden="true"></span>
+    <button type="button" data-tab="chats" aria-current="page">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>
+      <span data-i18n="tabChats">Chats</span>
+    </button>
+    <button type="button" data-tab="map">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18"/></svg>
+      <span data-i18n="tabMap">Map</span>
+    </button>
+    <button type="button" data-tab="stickers">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.4 6.8 19.1l1-5.8L3.5 9.2l5.9-.8z"/></svg>
+      <span data-i18n="tabStickers">Stickers</span>
+    </button>
+  </nav>
+
+  <!-- Settings sheet -->
+  <div id="settings" class="sheet" role="dialog" aria-modal="true" aria-labelledby="settingsTitle" hidden>
+    <div class="sheet-backdrop" data-close></div>
+    <div class="sheet-panel">
+      <div class="sheet-head">
+        <h2 id="settingsTitle" data-i18n="settings">Settings</h2>
+        <button class="icon-btn" type="button" data-close aria-label="Close" data-i18n-label="close">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+            <label class="switch"><input type="checkbox" id="optSound"><span class="track"><span class="thumb"></span></span><span><strong data-i18n="sound">Sound effects</strong><small data-i18n="soundHint">Tactile clicks and telemetry chimes.</small></span></label>
+      <label class="switch"><input type="checkbox" id="optProof"><span class="track"><span class="thumb"></span></span><span><strong data-i18n="optProof">Show NASA quote</strong><small data-i18n="optProofHint">Show the exact sentence from the NASA page under each fact.</small></span></label>
+      <label class="switch"><input type="checkbox" id="optFacts"><span class="track"><span class="thumb"></span></span><span><strong data-i18n="optFacts">Facts only</strong><small data-i18n="optFactsHint">Hide the robot's story lines.</small></span></label>
+      <label class="switch" id="ttsRow"><input type="checkbox" id="optSpeak"><span class="track"><span class="thumb"></span></span><span><strong data-i18n="optSpeak">Read replies aloud</strong><small data-i18n="optSpeakHint">Uses your device's voice. Answers are read in English.</small></span></label>
+      <div class="field">
+        <span class="field-label" data-i18n="language">Language</span>
+        <div class="seg" role="radiogroup" aria-label="Language">
+          <button type="button" role="radio" data-lang="en" aria-checked="true">English</button>
+          <button type="button" role="radio" data-lang="ta" aria-checked="false" lang="ta">தமிழ்</button>
+        </div>
+      </div>
+      <button id="reset" class="ghost-btn danger" type="button" data-i18n="reset">Reset progress</button>
+      <p class="small muted" data-i18n="about">Data: NASA and NSSDCA mission pages. Not a NASA product.</p>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <radialGradient id="marsFill" cx="35%" cy="30%" r="90%">
+      <stop offset="0" stop-color="#d9673d"/><stop offset=".55" stop-color="#8f3420"/><stop offset="1" stop-color="#3d150e"/>
+    </radialGradient>
+    <radialGradient id="moonFill" cx="35%" cy="30%" r="90%">
+      <stop offset="0" stop-color="#9ea6b8"/><stop offset=".55" stop-color="#5a6175"/><stop offset="1" stop-color="#262a37"/>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+</svg>
+
+<script src="engine.js"></script>
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

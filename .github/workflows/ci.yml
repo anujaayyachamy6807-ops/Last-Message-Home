@@ -1,0 +1,23 @@
+name: checks
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Engine and data tests (Node)
+        run: node test/chat.test.js
+      - name: Data check (Python)
+        run: python scripts/check_data.py
+      - name: contacts.json is valid JSON
+        run: python -c "import json; json.load(open('data/contacts.json', encoding='utf-8'))"

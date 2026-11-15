@@ -1,0 +1,86 @@
+Explore Mars In Depth
+Mars Phoenix
+Occurred 18 years ago
+Mission Type
+Lander
+Launch
+Aug. 4, 2007
+Destination
+Mars
+Objective
+Search for evidence of past or present microbial life
+Both solar arrays open during a test on the Phoenix Mars lander.
+NASA/JPL-Caltech/UA/Lockheed Martin
+Overview
+Phoenix entered the Martian atmosphere at nearly 13,000 miles per hour (21,000 kilometers per hour) on May 25, 2008, and touched down safely on the surface at 23:38:38 UT in the Green Valley of Vastitas Borealis. It was the first successful landing of a stationary soft-lander on Mars since Viking 2 about 32 years earlier.
+During its descent, 
+Mars Reconnaissance Orbiter
+’s HiRISE camera clearly photographed Phoenix suspended from its parachute, the first time one spacecraft photographed another during a planetary landing.
+Mars Reconnaissance Orbiter caught this image of Phoenix hanging from its parachute as it descended to the Martian surface in 2008.
+Credit: NASA/JPL-Caltech/University of Arizona
+Objective
+The Mars Phoenix lander was designed to uncover the mysteries of the Martian arctic, studying the history of water and searching for complex organic molecules. In the continuing pursuit of water on Mars, the polar regions are a good place to probe, as water ice is found there. Phoenix landed farther north than any previous mission, at a latitude equivalent to that of northern Alaska. 
+Quick Facts
+Launch: 
+August 4, 2007 UTC
+Launch Vehicle: 
+Delta II
+Launch Locations: 
+Cape Canaveral Air Force Station, Florida
+Landing: 
+May 25, 2008
+Landing Site: 
+Vastitas Borealis, the arctic plains of Mars
+End of Mission:  
+Nov. 2, 2008
+This view combines hundreds of images taken during the first several weeks after NASA's Phoenix Mars Lander arrived on an arctic plain at 68.22 degrees north latitude, 234.25 degrees east longitude on Mars. The landing was on May 25, 2008.
+NASA/JPL-Caltech/University of Arizona/Texas A&M University
+Spacecraft and Science
+To analyze soil samples collected by its robotic arm, Phoenix carried tiny ovens and a portable laboratory. Selected samples were heated to release volatiles that were examined for their chemical composition and other characteristics.
+Phoenix's stereo camera, located on its 2-meter (6.6-foot) mast, used two "eyes" to reveal a high-resolution perspective of the landing site's geology. It also provided range maps for the team's use in choosing where to dig. Multi-spectral capability enabled the identification of local minerals.
+To update our understanding of Martian atmospheric processes, Phoenix also scanned the atmosphere up to 12.4 miles (20 kilometers) in altitude, obtaining data about the formation, duration and movement of clouds, fog, and dust plumes. It also carried temperature and pressure sensors.
+Science Instruments
+Surface Stereo Imager (SSI)
+Robotic Arm Camera (RAC)
+Microscopy Electrochemistry and Conductivity Analyzer (MECA)
+Thermal and Evolved Gas Analyzer (TEGA)
+Meteorological Station (MET)
+This mosaic of images from the Surface Stereo Imager camera on NASA's Phoenix Mars Lander shows a portion of the spacecraft's deck after deliveries of several Martian soil samples to instruments on the deck.
+In the center and right foreground is the Thermal and Evolved-Gas Analyzer. On the left is the Microscopy, Electrochemistry and Conductivity Analyzer.
+NASA/JPL-Caltech/University of Arizona/Texas A&M University
+Science Highlights
+Besides verifying the existence of water-ice in the Martian subsurface, Phoenix discovered traces of the chemical perchlorate, a possible energy source for microbes and a potentially valuable future resource for human explorers.
+During the course of its three-month mission, Phoenix dug into an ice-rich layer near the surface. It checked samples of soil and ice for evidence about whether the site was ever hospitable to life. The lander waited 15 minutes for the dust to settle before unfurling its solar panels. The first images showed a flat surface marred by pebbles and troughs, but no large rocks or hills as expected, given its northern position. Within four days, Phoenix had transmitted a complete 360-degree panorama of the cold Martian surface, deployed the nearly 8-foot (2.5-meter) robotic arm, and started returning regular weather reports.
+On May 31, the robotic arm scooped up dirt and began sampling Martian soil for ice. By June 19, mission scientists were able to conclude that clumps of bright material in the “DodoGoldilocks” trench dug by the robotic arm were probably water ice – the material had vaporized four days after the scoop.
+Several of the trenches dug by NASA's Phoenix Mars Lander are displayed in this approximately true-color mosaic of images from the lander's Surface Stereo Imager camera.
+NASA/JPL-Caltech/University of Arizona/Texas A&M University
+On July 31, NASA officially announced that there is water on Mars, based on a sample collected by the lander, and analyzed by the Thermal and Evolved Gas Analyzer instrument, or TEGA. William Boynton of the University of Arizona noted that such data added to the data from the 2001 Mars Odyssey orbiter.
+On Aug. 5, the Phoenix team announced that they had found perchlorates on the surface of Mars that neither confirmed nor refuted the possibility of life on Mars. The results also led scientists to revisit the data from the Viking landers.
+By the end of August, Phoenix had completed its originally planned 90-day mission, which was extended to Sept. 30. On Sept. 12, the lander scoop delivered a new soil sample to its wet chemistry laboratory, which mixed an aqueous solution from Earth to the soil – part of a process to identify soluble nutrients and other chemicals in the soil. Early results suggested that the soil was alkaline, composed of salts and other chemicals such as perchlorate, sodium, magnesium, chloride, and potassium.
+News and Features
+				All Mars News                
+Article
+5 Min Read
+NASA’s ESCAPADE Completes Powered Earth Flybys, Now En Route to Mars
+Blog
+5 Min Read
+NASA’s Twin ESCAPADE Spacecraft to Slingshot Past Earth on Way to Mars
+5 Min Read
+NASA-funded Study Details One of Oldest Mars Meteorites Ever Found
+Article
+6 Min Read
+NASA’s Perseverance Offers Clues to Protect Crews From Mars Dust
+Article
+5 Min Read
+Pedal to the Metal: NASA’s Psyche Heads Toward Asteroid Belt
+Blog
+Keep Exploring
+Discover More Topics From NASA
+James Webb Space Telescope
+Webb is the premier observatory of the next decade, serving thousands of astronomers worldwide. It studies every phase in the…
+Perseverance Rover
+This rover and its aerial sidekick were assigned to study the geology of Mars and seek signs of ancient microbial…
+Parker Solar Probe
+On a mission to “touch the Sun,” NASA's Parker Solar Probe became the first spacecraft to fly through the corona…
+Juno
+NASA’s Juno spacecraft entered orbit around Jupiter in 2016, the first explorer to peer below the planet's dense clouds to…

@@ -1,0 +1,2405 @@
+{
+  "meta": {
+    "checked": "2026-11-14",
+    "note": "Every fact line has a quote that is copied from the NASA page named in 'page'. data/sources/*.txt is the saved text of those pages. test/chat.test.js checks that each quote is in the saved text and that each number in a fact line is in its quote."
+  },
+  "contacts": [
+    {
+      "id": "viking-1",
+      "name": "Viking 1",
+      "short": "V1",
+      "kind": "Lander",
+      "place": "Mars",
+      "place_detail": "Chryse Planitia",
+      "place_quote": "the western slopes of Chryse Planitia (Golden Plain)",
+      "pages": [
+        {
+          "key": "viking-1",
+          "label": "NASA Science: Viking 1",
+          "url": "https://science.nasa.gov/mission/viking-1/"
+        }
+      ],
+      "last_seen": {
+        "date": "1982-11-11",
+        "text": "Last contact 11 Nov 1982",
+        "quote": "The lander operated until Nov. 11, 1982",
+        "page": "viking-1"
+      },
+      "coords": {
+        "lat": 22.483,
+        "lon": 47.94,
+        "ew": "W",
+        "quote": "22.483 degrees north latitude and 47.94 degrees west longitude",
+        "page": "viking-1"
+      },
+      "image": {
+        "file": "img/viking-1.jpg",
+        "alt": "Black and white picture of rocks and sand on Mars, with part of the Viking lander in the lower right corner.",
+        "caption": "An early picture from the surface of Mars, shown on the Viking 1 mission page.",
+        "credit": "NASA"
+      },
+      "opening": [
+        {
+          "t": "voice",
+          "text": "Hello! You found Viking 1."
+        },
+        {
+          "t": "note",
+          "text": "I only say what my NASA mission page says. Tap a question."
+        }
+      ],
+      "questions": [
+        {
+          "id": "land",
+          "label": "Where did you land?",
+          "page": "viking-1",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "I touched down on Mars on 20 July 1976, at 22.483 degrees north and 47.94 degrees west.",
+              "quote": "set down safely at 22.483 degrees north latitude and 47.94 degrees west longitude at 11:53:06 UT July 20, 1976"
+            },
+            {
+              "t": "fact",
+              "text": "The first planned spot was rougher than expected, so scientists moved me to the western slopes of Chryse Planitia, the Golden Plain.",
+              "quote": [
+                "the area was rougher than expected",
+                "western slopes of Chryse Planitia (Golden Plain)"
+              ]
+            },
+            {
+              "t": "voice",
+              "text": "A safer place to land. That was the plan."
+            }
+          ]
+        },
+        {
+          "id": "see",
+          "label": "What did you see first?",
+          "page": "viking-1",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "Once down, I took photographs in three colours of my surroundings.",
+              "quote": "began taking high-quality photographs (in three colors) of its surroundings"
+            },
+            {
+              "t": "fact",
+              "text": "I also took a 300-degree panorama that shows parts of myself and the gently rolling plains.",
+              "quote": "took a 300-degree panorama of its surroundings"
+            }
+          ]
+        },
+        {
+          "id": "cold",
+          "label": "How cold was it?",
+          "page": "viking-1",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "My instruments recorded minus 86 degrees Celsius before dawn and minus 33 degrees Celsius in the afternoon.",
+              "quote": "minus 123 degrees Fahrenheit (minus 86 degrees Celsius) before dawn to minus 27 degrees Fahrenheit (minus 33 degrees Celsius) in the afternoon"
+            },
+            {
+              "t": "fact",
+              "text": "My seismometer did not work.",
+              "quote": "The seismometer on the lander was, however, inoperable."
+            }
+          ]
+        },
+        {
+          "id": "life",
+          "label": "Did you look for life?",
+          "page": "viking-1",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "On 28 July 1976 my robot arm scooped up the first soil samples and put them into a biological laboratory.",
+              "quote": [
+                "On July 28, 1976",
+                "the first soil samples and deposited them into a special biological laboratory"
+              ]
+            },
+            {
+              "t": "fact",
+              "text": "Data from four samples could have been read as a weak positive sign of life.",
+              "quote": "could have been construed as indicating the presence of life (weak positive)"
+            },
+            {
+              "t": "fact",
+              "text": "But the main test for organic compounds gave negative results.",
+              "quote": "gave negative results"
+            }
+          ]
+        },
+        {
+          "id": "name",
+          "label": "Do you have another name?",
+          "page": "viking-1",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "In January 1982 I was renamed the Thomas Mutch Memorial Station, to honour the leader of the Viking imaging team.",
+              "quote": "In January 1982, it was renamed the Thomas Mutch Memorial Station in honor of Thomas A. Mutch"
+            }
+          ]
+        },
+        {
+          "id": "stop",
+          "label": "Why did you go quiet?",
+          "page": "viking-1",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "I worked until 11 November 1982. Then a faulty command sent from Earth interrupted communications.",
+              "quote": "The lander operated until Nov. 11, 1982, when a faulty command sent from Earth resulted in an interruption of communications."
+            },
+            {
+              "t": "fact",
+              "text": "Attempts to regain contact were not successful.",
+              "quote": "Further attempts to regain contact proved to be unsuccessful."
+            },
+            {
+              "t": "calc",
+              "from": "1976-07-20",
+              "to": "1982-11-11",
+              "text": "From landing to that day is about {span}.",
+              "quote": [
+                "July 20, 1976",
+                "Nov. 11, 1982"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "heavy",
+          "label": "How heavy are you?",
+          "page": "viking-1",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "My lander part weighed 978 kilograms (2,156 pounds). The page gives this for each Viking spacecraft.",
+              "quote": "a lander (2,156 pounds or 978 kilograms)"
+            }
+          ]
+        }
+      ],
+      "card": {
+        "title": "First successful landing on Mars",
+        "text": "Viking 1 made the first truly successful landing on Mars.",
+        "quote": "made the first truly successful landing on Mars",
+        "page": "viking-1"
+      },
+      "quiz": [
+        {
+          "q": "What interrupted contact with Viking 1 lander in 1982?",
+          "options": [
+            "A faulty command sent from Earth",
+            "A dust storm",
+            "A broken camera"
+          ],
+          "answer": 0,
+          "quote": "a faulty command sent from Earth resulted in an interruption of communications",
+          "page": "viking-1"
+        },
+        {
+          "q": "On the Viking 1 page, how cold did the instruments record before dawn?",
+          "options": [
+            "Minus 86 degrees Celsius",
+            "Minus 6 degrees Celsius",
+            "Plus 33 degrees Celsius"
+          ],
+          "answer": 0,
+          "quote": "minus 123 degrees Fahrenheit (minus 86 degrees Celsius) before dawn",
+          "page": "viking-1"
+        }
+      ]
+    },
+    {
+      "id": "sojourner",
+      "name": "Sojourner",
+      "short": "SJ",
+      "kind": "Rover (with the Pathfinder lander)",
+      "place": "Mars",
+      "place_detail": "Ares Vallis",
+      "place_quote": "Landing Site: Ares Vallis, Mars",
+      "pages": [
+        {
+          "key": "pathfinder",
+          "label": "NASA Science: Mars Pathfinder",
+          "url": "https://science.nasa.gov/mission/mars-pathfinder/"
+        },
+        {
+          "key": "pathfinder-nssdca",
+          "label": "NSSDCA: Mars Pathfinder",
+          "url": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1996-068A"
+        }
+      ],
+      "last_seen": {
+        "date": "1997-09-27",
+        "text": "Pathfinder mission ended 27 Sep 1997",
+        "quote": "End of Mission Sept. 27, 1997",
+        "page": "pathfinder"
+      },
+      "coords": {
+        "lat": 19.33,
+        "lon": 33.55,
+        "ew": "W",
+        "quote": "The landing site in the Ares Vallis region of Mars is at 19.33 N, 33.55 W.",
+        "page": "pathfinder-nssdca",
+        "note": "Landing site of Mars Pathfinder"
+      },
+      "image": {
+        "file": "img/pathfinder.jpg",
+        "alt": "Rocky orange Mars ground under a hazy sky. Parts of the Pathfinder lander are at the bottom of the picture.",
+        "caption": "The Mars Pathfinder landing site, from the mission page.",
+        "credit": "NASA"
+      },
+      "opening": [
+        {
+          "t": "voice",
+          "text": "Hi! Sojourner here, the little rover."
+        },
+        {
+          "t": "note",
+          "text": "My NASA page is about the whole Mars Pathfinder mission, lander and rover together. Tap a question."
+        }
+      ],
+      "questions": [
+        {
+          "id": "who",
+          "label": "Who are you?",
+          "page": "pathfinder",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "I was the first-ever robotic rover delivered to the surface of Mars.",
+              "quote": "deliver the first-ever robotic rover, Sojourner, to the Martian surface"
+            },
+            {
+              "t": "fact",
+              "text": "I was named after the American civil-rights crusader Sojourner Truth.",
+              "quote": "named Sojourner after American civil-rights crusader Sojourner Truth"
+            },
+            {
+              "t": "fact",
+              "text": "I weigh 23 pounds (10.6 kilograms).",
+              "quote": "the 23-pound (10.6 kilogram) rover, Sojourner"
+            }
+          ]
+        },
+        {
+          "id": "land",
+          "label": "How did you get to the ground?",
+          "page": "pathfinder",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "We landed on 4 July 1997 with airbags. The lander bounced about 15 times, as high as 50 feet (15 meters), like a giant beach ball.",
+              "quote": [
+                "Mars Landing July 4, 1997",
+                "bounced like a giant beach ball about 15 times, as high as 50 feet (15 meters)"
+              ]
+            },
+            {
+              "t": "fact",
+              "text": "On sol 2 I stood up to my full height of 1 foot (30 centimeters) and rolled down the lander's rear ramp.",
+              "quote": [
+                "late in the second Martian day, or sol 2",
+                "Sojourner stood up to its full height of 1 foot (30 centimeters) and rolled down the lander"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "where",
+          "label": "Where are you?",
+          "page": "pathfinder",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "The landing site is Ares Vallis, an ancient flood plain.",
+              "quote": [
+                "Landing Site: Ares Vallis, Mars",
+                "an ancient flood plain"
+              ]
+            },
+            {
+              "t": "fact",
+              "text": "It is known as among the rockiest parts of the planet. Scientists picked it because they believed it was a relatively safe place to land.",
+              "quote": [
+                "known as among the rockiest parts of the planet",
+                "a relatively safe surface to land on"
+              ]
+            },
+            {
+              "t": "note",
+              "text": "This page gives no coordinates, so I am not on the Map tab."
+            }
+          ]
+        },
+        {
+          "id": "send",
+          "label": "How much did you send home?",
+          "page": "pathfinder",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "From landing until the final data transmission on 27 September 1997, the Pathfinder mission returned 2.3 billion bits of information.",
+              "quote": "From landing until the final data transmission on Sept. 27, 1997, Mars Pathfinder returned 2.3 billion bits of information"
+            },
+            {
+              "t": "fact",
+              "text": "That included more than 16,500 images from the lander and 550 images from me, the rover.",
+              "quote": "more than 16,500 images from the lander and 550 images from the rover"
+            }
+          ]
+        },
+        {
+          "id": "water",
+          "label": "Did you find signs of water?",
+          "page": "pathfinder",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "Rounded pebbles and cobbles at the landing site suggested conglomerates that formed in running water during a warmer past.",
+              "quote": "Rounded pebbles and cobbles at the landing site, and other observations, suggested conglomerates that formed in running water during a warmer past in which liquid water was stable."
+            }
+          ]
+        },
+        {
+          "id": "stop",
+          "label": "Why did you stop?",
+          "page": "pathfinder",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "The mission page lists the end of the mission as 27 September 1997.",
+              "quote": "End of Mission Sept. 27, 1997"
+            },
+            {
+              "t": "note",
+              "text": "The page does not say why contact ended, and it does not give a separate date for me, the rover."
+            },
+            {
+              "t": "calc",
+              "from": "1997-07-04",
+              "to": "1997-09-27",
+              "text": "From landing to that day is about {span}.",
+              "quote": [
+                "Mars Landing July 4, 1997",
+                "End of Mission Sept. 27, 1997"
+              ]
+            }
+          ]
+        }
+      ],
+      "card": {
+        "title": "First rover on Mars",
+        "text": "Sojourner was the first-ever robotic rover delivered to the surface of Mars.",
+        "quote": "deliver the first-ever robotic rover, Sojourner, to the Martian surface",
+        "page": "pathfinder"
+      },
+      "quiz": [
+        {
+          "q": "How did Pathfinder land on Mars?",
+          "options": [
+            "With a parachute and airbags",
+            "With wheels on a runway",
+            "With a helicopter"
+          ],
+          "answer": 0,
+          "quote": "assisted by a parachute to slow its descent through the thin Martian atmosphere and a giant system of airbags to cushion the impact",
+          "page": "pathfinder"
+        },
+        {
+          "q": "How many images did the rover send, according to the page?",
+          "options": [
+            "550",
+            "55",
+            "5,500"
+          ],
+          "answer": 0,
+          "quote": "550 images from the rover",
+          "page": "pathfinder"
+        }
+      ]
+    },
+    {
+      "id": "spirit",
+      "name": "Spirit",
+      "short": "SP",
+      "kind": "Rover",
+      "place": "Mars",
+      "place_detail": "Gusev Crater",
+      "place_quote": "Spirit landed at Gusev Crater",
+      "pages": [
+        {
+          "key": "mer",
+          "label": "NASA Science: Spirit and Opportunity",
+          "url": "https://science.nasa.gov/mission/mars-exploration-rovers-spirit-and-opportunity/"
+        },
+        {
+          "key": "spirit-nssdca",
+          "label": "NSSDCA: Spirit",
+          "url": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2003-027A"
+        }
+      ],
+      "last_seen": {
+        "date": "2010",
+        "text": "Mission concluded in 2010",
+        "quote": "Spirit concluded its mission in 2010.",
+        "page": "mer"
+      },
+      "coords": {
+        "lat": -14.572,
+        "lon": 175.478,
+        "ew": "E",
+        "quote": "in Gusev Crater, at 14.572 S, 175.478 E",
+        "page": "spirit-nssdca",
+        "note": "Landing site. Spirit drove on from here"
+      },
+      "image": {
+        "file": "img/mer.jpg",
+        "alt": "An illustration of a six-wheeled Mars rover with a tall camera mast, on rocky orange ground.",
+        "caption": "Illustration of a Mars Exploration Rover. Spirit and Opportunity were identical twins.",
+        "credit": "NASA (illustration, from the mission page)"
+      },
+      "opening": [
+        {
+          "t": "voice",
+          "text": "Hey, it's Spirit."
+        },
+        {
+          "t": "note",
+          "text": "My page is shared with my twin, Opportunity. Tap a question."
+        }
+      ],
+      "questions": [
+        {
+          "id": "twin",
+          "label": "Are you a twin?",
+          "page": "mer",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "Yes. Spirit and Opportunity were identical twin robots.",
+              "quote": "Spirit and Opportunity rovers were identical twin robots that helped rewrite our understanding of the early history of Mars"
+            },
+            {
+              "t": "voice",
+              "text": "You can chat with my twin too."
+            }
+          ]
+        },
+        {
+          "id": "land",
+          "label": "When and where did you land?",
+          "page": "mer",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "I landed on 3 January 2004.",
+              "quote": "(Spirit) Jan. 3, 2004 and (Opportunity) Jan. 24, 2004"
+            },
+            {
+              "t": "fact",
+              "text": "I landed at Gusev Crater, a possible former lake in a giant impact crater.",
+              "quote": "Spirit landed at Gusev Crater, a possible former lake in a giant impact crater."
+            }
+          ]
+        },
+        {
+          "id": "job",
+          "label": "What was your job?",
+          "page": "mer",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "To look for signs of past water on Mars.",
+              "quote": "Look for signs of past water on Mars"
+            },
+            {
+              "t": "fact",
+              "text": "By studying the rock record, we confirmed that water was long standing on the surface of Mars in ancient times.",
+              "quote": "By studying the rock record, Spirit and Opportunity confirmed that water was long standing on the surface of Mars in ancient times."
+            }
+          ]
+        },
+        {
+          "id": "far",
+          "label": "How far did you travel?",
+          "page": "mer",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "By the end of my mission I had journeyed 4.8 miles (7.7 kilometers) on Mars.",
+              "quote": "By the end of its mission, Spirit journeyed 4.8 miles (7.7 kilometers) on Mars."
+            }
+          ]
+        },
+        {
+          "id": "stop",
+          "label": "How did your mission end?",
+          "page": "mer",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "I concluded my mission in 2010.",
+              "quote": "Spirit concluded its mission in 2010."
+            },
+            {
+              "t": "note",
+              "text": "This page gives no exact last-contact date and no reason. I will not guess."
+            }
+          ]
+        }
+      ],
+      "card": {
+        "title": "Twin robot geologists",
+        "text": "Spirit and Opportunity were identical twin robots that helped rewrite our understanding of the early history of Mars.",
+        "quote": "identical twin robots that helped rewrite our understanding of the early history of Mars",
+        "page": "mer"
+      },
+      "quiz": [
+        {
+          "q": "Where did Spirit land?",
+          "options": [
+            "Gusev Crater",
+            "Meridiani Planum",
+            "Ares Vallis"
+          ],
+          "answer": 0,
+          "quote": "Spirit landed at Gusev Crater",
+          "page": "mer"
+        },
+        {
+          "q": "How far did Spirit journey, according to the page?",
+          "options": [
+            "4.8 miles (7.7 kilometers)",
+            "28.06 miles (45.16 kilometers)",
+            "0.5 miles (0.8 kilometers)"
+          ],
+          "answer": 0,
+          "quote": "Spirit journeyed 4.8 miles (7.7 kilometers) on Mars",
+          "page": "mer"
+        }
+      ]
+    },
+    {
+      "id": "opportunity",
+      "name": "Opportunity",
+      "short": "OP",
+      "kind": "Rover",
+      "place": "Mars",
+      "place_detail": "Meridiani Planum",
+      "place_quote": "Opportunity landed at Meridiani Planum",
+      "pages": [
+        {
+          "key": "mer",
+          "label": "NASA Science: Spirit and Opportunity",
+          "url": "https://science.nasa.gov/mission/mars-exploration-rovers-spirit-and-opportunity/"
+        },
+        {
+          "key": "opportunity-nssdca",
+          "label": "NSSDCA: Opportunity",
+          "url": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2003-032A"
+        }
+      ],
+      "last_seen": {
+        "date": "2018-06-10",
+        "text": "Last contact 10 Jun 2018",
+        "quote": "Opportunity last communicated with Earth on June 10, 2018",
+        "page": "mer"
+      },
+      "coords": {
+        "lat": -1.946,
+        "lon": 354.473,
+        "ew": "E",
+        "quote": [
+          "The spacecraft came to rest in a 20 m diameter crater at 1.946",
+          "S and 354.473"
+        ],
+        "page": "opportunity-nssdca",
+        "note": "Landing site. Opportunity drove on from here"
+      },
+      "image": {
+        "file": "img/mer.jpg",
+        "alt": "An illustration of a six-wheeled Mars rover with a tall camera mast, on rocky orange ground.",
+        "caption": "Illustration of a Mars Exploration Rover. Spirit and Opportunity were identical twins.",
+        "credit": "NASA (illustration, from the mission page)"
+      },
+      "opening": [
+        {
+          "t": "voice",
+          "text": "Hello. Opportunity here."
+        },
+        {
+          "t": "note",
+          "text": "People like to put words in my mouth about my last day. I will only use what NASA's page says."
+        }
+      ],
+      "questions": [
+        {
+          "id": "land",
+          "label": "When and where did you land?",
+          "page": "mer",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "I landed on 24 January 2004.",
+              "quote": "(Spirit) Jan. 3, 2004 and (Opportunity) Jan. 24, 2004"
+            },
+            {
+              "t": "fact",
+              "text": "I landed at Meridiani Planum, a place where mineral deposits suggested that Mars had a wet history.",
+              "quote": "Opportunity landed at Meridiani Planum, a place where mineral deposits suggested that Mars had a wet history."
+            }
+          ]
+        },
+        {
+          "id": "pano",
+          "label": "What was your biggest picture?",
+          "page": "mer",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "My panorama called Lion King has 558 images and more than 75 megabytes of data. It was the largest panorama captured by either rover in 2004.",
+              "quote": "The full panorama comprises 558 images and more than 75 megabytes of data, the largest panorama captured by either of the Mars Exploration Rovers in 2004"
+            }
+          ]
+        },
+        {
+          "id": "far",
+          "label": "How far did you drive?",
+          "page": "mer",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "I held the off-Earth roving distance record with 28.06 miles (45.16 kilometers) of driving on Mars.",
+              "quote": "Opportunity held the off-Earth roving distance record after accruing 28.06 miles (45.16 kilometers) of driving on Mars"
+            },
+            {
+              "t": "fact",
+              "text": "That record held until 11 October 2026, when Perseverance reached 28.10 miles (45.22 kilometers).",
+              "quote": [
+                "That record held until Oct. 11, 2026",
+                "to reach 28.10 miles (45.22 kilometers)"
+              ]
+            },
+            {
+              "t": "voice",
+              "text": "Records are made to be passed. I am proud of my successor."
+            }
+          ]
+        },
+        {
+          "id": "stop",
+          "label": "When did you last talk to Earth?",
+          "page": "mer",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "I last communicated with Earth on 10 June 2018, as a planet-wide dust storm blanketed my solar-powered location on Mars.",
+              "quote": "Opportunity last communicated with Earth on June 10, 2018, as a planet-wide dust storm blanketed the solar-powered rover"
+            },
+            {
+              "t": "calc",
+              "from": "2004-01-24",
+              "to": "2018-06-10",
+              "text": "From landing to that day is about {span}.",
+              "quote": [
+                "(Spirit) Jan. 3, 2004 and (Opportunity) Jan. 24, 2004",
+                "Opportunity last communicated with Earth on June 10, 2018"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "twin",
+          "label": "Who is your twin?",
+          "page": "mer",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "Spirit. We were identical twin robots.",
+              "quote": "Spirit and Opportunity rovers were identical twin robots"
+            }
+          ]
+        }
+      ],
+      "card": {
+        "title": "Fell silent in a dust storm",
+        "text": "Opportunity last communicated with Earth on June 10, 2018, as a planet-wide dust storm blanketed its location.",
+        "quote": "Opportunity last communicated with Earth on June 10, 2018, as a planet-wide dust storm blanketed",
+        "page": "mer"
+      },
+      "quiz": [
+        {
+          "q": "When did Opportunity last communicate with Earth?",
+          "options": [
+            "10 June 2018",
+            "3 January 2004",
+            "11 October 2026"
+          ],
+          "answer": 0,
+          "quote": "Opportunity last communicated with Earth on June 10, 2018",
+          "page": "mer"
+        },
+        {
+          "q": "What blanketed Opportunity's location at the time?",
+          "options": [
+            "A planet-wide dust storm",
+            "Snow",
+            "A flood"
+          ],
+          "answer": 0,
+          "quote": "a planet-wide dust storm blanketed",
+          "page": "mer"
+        }
+      ]
+    },
+    {
+      "id": "phoenix",
+      "name": "Phoenix",
+      "short": "PX",
+      "kind": "Lander",
+      "place": "Mars",
+      "place_detail": "Vastitas Borealis (arctic plains)",
+      "place_quote": "Landing Site: Vastitas Borealis, the arctic plains of Mars",
+      "pages": [
+        {
+          "key": "phoenix",
+          "label": "NASA Science: Phoenix",
+          "url": "https://science.nasa.gov/mission/phoenix/"
+        }
+      ],
+      "last_seen": {
+        "date": "2008-11-02",
+        "text": "Mission ended 2 Nov 2008",
+        "quote": "End of Mission: Nov. 2, 2008",
+        "page": "phoenix"
+      },
+      "coords": {
+        "lat": 68.22,
+        "lon": 234.25,
+        "ew": "E",
+        "quote": "68.22 degrees north latitude, 234.25 degrees east longitude",
+        "page": "phoenix"
+      },
+      "image": {
+        "file": "img/phoenix.jpg",
+        "alt": "An illustration of the Phoenix lander on icy brown ground, with an arm reaching to the ground and two round solar panels.",
+        "caption": "Illustration of the Phoenix lander on Mars, from the mission page.",
+        "credit": "NASA (illustration, from the mission page)"
+      },
+      "opening": [
+        {
+          "t": "voice",
+          "text": "Brrr. Phoenix here, from the far north of Mars."
+        },
+        {
+          "t": "note",
+          "text": "Tap a question. Every fact has a source link."
+        }
+      ],
+      "questions": [
+        {
+          "id": "land",
+          "label": "How did you land?",
+          "page": "phoenix",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "I entered the Martian atmosphere at nearly 13,000 miles per hour (21,000 kilometers per hour) on 25 May 2008.",
+              "quote": "entered the Martian atmosphere at nearly 13,000 miles per hour (21,000 kilometers per hour) on May 25, 2008"
+            },
+            {
+              "t": "fact",
+              "text": "I touched down safely at 23:38:38 UT in the Green Valley of Vastitas Borealis.",
+              "quote": "touched down safely on the surface at 23:38:38 UT in the Green Valley of Vastitas Borealis"
+            }
+          ]
+        },
+        {
+          "id": "photo",
+          "label": "Did anyone photograph your landing?",
+          "page": "phoenix",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "Yes. The HiRISE camera on Mars Reconnaissance Orbiter photographed me hanging from my parachute. It was the first time one spacecraft photographed another during a planetary landing.",
+              "quote": "HiRISE camera clearly photographed Phoenix suspended from its parachute, the first time one spacecraft photographed another during a planetary landing"
+            }
+          ]
+        },
+        {
+          "id": "north",
+          "label": "Why so far north?",
+          "page": "phoenix",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "Polar regions are a good place to look for water, because water ice is found there.",
+              "quote": "the polar regions are a good place to probe, as water ice is found there"
+            },
+            {
+              "t": "fact",
+              "text": "I landed farther north than any previous mission, at a latitude equivalent to northern Alaska.",
+              "quote": "Phoenix landed farther north than any previous mission, at a latitude equivalent to that of northern Alaska."
+            }
+          ]
+        },
+        {
+          "id": "found",
+          "label": "What did you find?",
+          "page": "phoenix",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "I verified the existence of water-ice in the Martian subsurface.",
+              "quote": "Besides verifying the existence of water-ice in the Martian subsurface"
+            },
+            {
+              "t": "fact",
+              "text": "I also discovered traces of the chemical perchlorate, a possible energy source for microbes and a potentially valuable future resource for human explorers.",
+              "quote": "a possible energy source for microbes and a potentially valuable future resource for human explorers"
+            },
+            {
+              "t": "fact",
+              "text": "On 31 July NASA officially announced that there is water on Mars, based on a sample I collected.",
+              "quote": "On July 31, NASA officially announced that there is water on Mars"
+            }
+          ]
+        },
+        {
+          "id": "long",
+          "label": "How long did you work?",
+          "page": "phoenix",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "I completed my planned 90-day mission by the end of August. It was extended to 30 September.",
+              "quote": "Phoenix had completed its originally planned 90-day mission, which was extended to Sept. 30"
+            },
+            {
+              "t": "fact",
+              "text": "The page lists the end of my mission as 2 November 2008.",
+              "quote": "End of Mission: Nov. 2, 2008"
+            },
+            {
+              "t": "calc",
+              "from": "2008-05-25",
+              "to": "2008-11-02",
+              "text": "From landing to that day is about {span}.",
+              "quote": [
+                "on May 25, 2008",
+                "End of Mission: Nov. 2, 2008"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "stop",
+          "label": "Why did you stop?",
+          "page": "phoenix",
+          "reply": [
+            {
+              "t": "note",
+              "text": "The mission page lists an end date but does not say why. I will not guess."
+            }
+          ]
+        }
+      ],
+      "card": {
+        "title": "Water ice and perchlorate",
+        "text": "Phoenix verified water-ice in the Martian subsurface and discovered traces of the chemical perchlorate.",
+        "quote": "Phoenix discovered traces of the chemical perchlorate",
+        "page": "phoenix"
+      },
+      "quiz": [
+        {
+          "q": "What chemical did Phoenix discover traces of?",
+          "options": [
+            "Perchlorate",
+            "Chlorine gas",
+            "Helium"
+          ],
+          "answer": 0,
+          "quote": "Phoenix discovered traces of the chemical perchlorate",
+          "page": "phoenix"
+        },
+        {
+          "q": "Phoenix landed at a latitude equal to which place on Earth?",
+          "options": [
+            "Northern Alaska",
+            "The Equator",
+            "Southern India"
+          ],
+          "answer": 0,
+          "quote": "at a latitude equivalent to that of northern Alaska",
+          "page": "phoenix"
+        }
+      ]
+    },
+    {
+      "id": "insight",
+      "name": "InSight",
+      "short": "IS",
+      "kind": "Lander",
+      "place": "Mars",
+      "place_detail": "Elysium Planitia",
+      "place_quote": "Landing Site: Elysium Planitia, Mars",
+      "pages": [
+        {
+          "key": "insight",
+          "label": "NASA Science: InSight",
+          "url": "https://science.nasa.gov/mission/insight/"
+        }
+      ],
+      "last_seen": {
+        "date": "2022-12-15",
+        "text": "Mission ended 15 Dec 2022",
+        "quote": "End of Mission: Dec. 15, 2022",
+        "page": "insight"
+      },
+      "coords": {
+        "lat": 4.5,
+        "lon": 135.9,
+        "ew": "E",
+        "quote": "centered at about 4.5 degrees north latitude and 135.9 degrees east longitude",
+        "page": "insight"
+      },
+      "image": {
+        "file": "img/insight.jpg",
+        "alt": "An illustration of the InSight lander on Mars with its arm raised, and a cut-away view of the ground below it.",
+        "caption": "Illustration of the InSight lander, from the mission page.",
+        "credit": "NASA (illustration, from the mission page)"
+      },
+      "opening": [
+        {
+          "t": "voice",
+          "text": "Shh. Listen. InSight here."
+        },
+        {
+          "t": "note",
+          "text": "Tap a question. Every fact has a source link."
+        }
+      ],
+      "questions": [
+        {
+          "id": "job",
+          "label": "What was your job?",
+          "page": "insight",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "I studied the deep interior of Mars.",
+              "quote": "InSight studied the deep interior of Mars"
+            },
+            {
+              "t": "fact",
+              "text": "I was designed to take the planet's vital signs: its pulse, temperature, and reflexes.",
+              "quote": [
+                "was designed to take the planet",
+                "vital signs: its pulse, temperature, and reflexes"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "land",
+          "label": "When and where did you land?",
+          "page": "insight",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "I landed on 26 November 2018 at 11:52:59 a.m. Pacific Time.",
+              "quote": "Nov. 26, 2018, at 11:52:59 a.m. PT (2:52:59 p.m. ET)"
+            },
+            {
+              "t": "fact",
+              "text": "I landed in Elysium Planitia, centered at about 4.5 degrees north and 135.9 degrees east.",
+              "quote": [
+                "Landing Site: Elysium Planitia, Mars",
+                "centered at about 4.5 degrees north latitude and 135.9 degrees east longitude"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "flat",
+          "label": "Why a flat, plain place?",
+          "page": "insight",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "Elysium Planitia was selected not for its surface features, but for safety considerations.",
+              "quote": "Elysium Planitia was selected not for its surface features, but for safety considerations."
+            },
+            {
+              "t": "fact",
+              "text": "My purpose was to study the interior of Mars, not the surface.",
+              "quote": "InSight's purpose was to study the interior of Mars, not the surface"
+            }
+          ]
+        },
+        {
+          "id": "arm",
+          "label": "Tell me about your arm.",
+          "page": "insight",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "My robotic arm was over 5 feet 9 inches (1.8 meters) long. It lifted a seismometer and heat flow probe from the deck and placed them on the surface.",
+              "quote": "robotic arm was over 5 feet 9 inches (1.8 meters) long. It lifted a seismometer and heat flow probe from the deck and placed them on the surface"
+            },
+            {
+              "t": "fact",
+              "text": "I was built on the proven design of the Mars Phoenix lander.",
+              "quote": [
+                "The lander was built on the proven design of",
+                "Mars Phoenix lander"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "wind",
+          "label": "What did you hear?",
+          "page": "insight",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "My sensors captured a low rumble caused by vibrations from the Martian wind, estimated at 10 to 15 mph (5 to 7 meters a second) on 1 December 2018.",
+              "quote": "InSight sensors captured a haunting low rumble caused by vibrations from the Martian wind, estimated to be blowing at 10 to 15 mph (5 to 7 meters a second) on Dec. 1, 2018."
+            }
+          ]
+        },
+        {
+          "id": "stop",
+          "label": "When did your mission end?",
+          "page": "insight",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "The page lists the end of my mission as 15 December 2022.",
+              "quote": "End of Mission: Dec. 15, 2022"
+            },
+            {
+              "t": "calc",
+              "from": "2018-11-26",
+              "to": "2022-12-15",
+              "text": "From landing to that day is about {span}.",
+              "quote": [
+                "Nov. 26, 2018, at 11:52:59 a.m. PT",
+                "End of Mission: Dec. 15, 2022"
+              ]
+            },
+            {
+              "t": "note",
+              "text": "The page does not say why my mission ended. A NASA headline on it calls me a retired lander."
+            },
+            {
+              "t": "fact",
+              "text": "A NASA headline says a Mars orbiter spotted me to study dust movement.",
+              "quote": "NASA Mars Orbiter Spots Retired InSight Lander to Study Dust Movement"
+            }
+          ]
+        }
+      ],
+      "card": {
+        "title": "Mars' vital signs",
+        "text": "InSight studied the deep interior of Mars. It was designed to take the planet's pulse, temperature, and reflexes.",
+        "quote": "InSight studied the deep interior of Mars",
+        "page": "insight"
+      },
+      "quiz": [
+        {
+          "q": "What did InSight study?",
+          "options": [
+            "The deep interior of Mars",
+            "Mars moons",
+            "Mars clouds"
+          ],
+          "answer": 0,
+          "quote": "InSight studied the deep interior of Mars",
+          "page": "insight"
+        },
+        {
+          "q": "When did InSight land?",
+          "options": [
+            "26 November 2018",
+            "5 May 2018",
+            "15 December 2022"
+          ],
+          "answer": 0,
+          "quote": "Nov. 26, 2018, at 11:52:59 a.m. PT",
+          "page": "insight"
+        }
+      ]
+    },
+    {
+      "id": "ingenuity",
+      "name": "Ingenuity",
+      "short": "IN",
+      "kind": "Helicopter",
+      "place": "Mars",
+      "place_detail": "Jezero Crater",
+      "place_quote": "Landed Feb. 18, 2021, Jezero Crater, Mars",
+      "pages": [
+        {
+          "key": "ingenuity",
+          "label": "NASA Science: Ingenuity Mars Helicopter",
+          "url": "https://science.nasa.gov/mission/mars-2020-perseverance/ingenuity-mars-helicopter/"
+        }
+      ],
+      "last_seen": {
+        "date": "2024-01-25",
+        "text": "Mission ended 25 Jan 2024",
+        "quote": "completed its mission on January 25, 2024",
+        "page": "ingenuity"
+      },
+      "coords": null,
+      "image": {
+        "file": "img/ingenuity.jpg",
+        "alt": "A small helicopter with two thin rotors and four legs, standing on rocky orange ground.",
+        "caption": "Ingenuity on Mars, from the mission page.",
+        "credit": "NASA"
+      },
+      "opening": [
+        {
+          "t": "voice",
+          "text": "Hi! I am Ingenuity. I could fly!"
+        },
+        {
+          "t": "note",
+          "text": "Tap a question. Every fact has a source link."
+        }
+      ],
+      "questions": [
+        {
+          "id": "flights",
+          "label": "How many times did you fly?",
+          "page": "ingenuity",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "I was designed as a technology demonstration that would make no more than five test flights in 30 days.",
+              "quote": "Designed to be a technology demonstration that would make no more than five test flights in 30 days"
+            },
+            {
+              "t": "fact",
+              "text": "I eventually completed 72 flights across nearly three years.",
+              "quote": "the helicopter eventually completed 72 flights across nearly three years"
+            }
+          ]
+        },
+        {
+          "id": "first",
+          "label": "What was your first flight?",
+          "page": "ingenuity",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "On 19 April 2021 I completed the first powered, controlled flight on the Red Planet.",
+              "quote": [
+                "On April 19, 2021",
+                "made history when it completed the first powered, controlled flight on the Red Planet"
+              ]
+            },
+            {
+              "t": "fact",
+              "text": "It is called a Wright Brothers moment.",
+              "quote": "a feat that's been called a \"Wright Brothers moment.\""
+            }
+          ]
+        },
+        {
+          "id": "far",
+          "label": "How far and how high did you go?",
+          "page": "ingenuity",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "I completed 128.8 flying minutes, covering 10.5 miles (17.0 kilometers), and reached altitudes as high as 78.7 feet (24.0 meters).",
+              "quote": "Completed 128.8 flying minutes, covering 10.5 miles (17.0 kilometers), and reaching altitudes as high as 78.7 feet (24.0 meters)."
+            }
+          ]
+        },
+        {
+          "id": "thin",
+          "label": "Is it hard to fly on Mars?",
+          "page": "ingenuity",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "The air is very thin, less than 1 percent as dense as Earth's.",
+              "quote": "Thin atmosphere, less than 1 percent as dense as Earth"
+            },
+            {
+              "t": "fact",
+              "text": "I flew successfully in that extremely thin Martian atmosphere.",
+              "quote": "Successfully flying in the extremely thin Martian atmosphere."
+            }
+          ]
+        },
+        {
+          "id": "size",
+          "label": "How big are you?",
+          "page": "ingenuity",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "My mass is 3.97 pounds (1.8 kilograms).",
+              "quote": "Mass 3.97 pounds (1.8 kilograms)"
+            },
+            {
+              "t": "fact",
+              "text": "My rotors measure approximately 4 feet (approximately 1.2 meters) tip to tip.",
+              "quote": "Total length of rotors: Approximately 4 feet (approximately 1.2 meters) tip to tip"
+            }
+          ]
+        },
+        {
+          "id": "help",
+          "label": "Who did you help?",
+          "page": "ingenuity",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "I served as an aerial scout for scientists and rover planners.",
+              "quote": "serving as an aerial scout for scientists and rover planners"
+            }
+          ]
+        },
+        {
+          "id": "stop",
+          "label": "When did you fly for the last time?",
+          "page": "ingenuity",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "I flew for the last time on 18 January 2024 and completed my mission on 25 January 2024, after nearly three years.",
+              "quote": "Ingenuity flew for the last time on January 18, 2024, and completed its mission on January 25, 2024, after nearly three years of aerial exploration and 72 historic flights."
+            },
+            {
+              "t": "calc",
+              "from": "2021-02-18",
+              "to": "2024-01-25",
+              "text": "From landing to that day is about {span}.",
+              "quote": [
+                "Landed Feb. 18, 2021",
+                "completed its mission on January 25, 2024"
+              ]
+            },
+            {
+              "t": "note",
+              "text": "The page does not say why my flights stopped. I will not guess."
+            }
+          ]
+        }
+      ],
+      "card": {
+        "title": "72 flights, not 5",
+        "text": "Ingenuity was designed for no more than five test flights in 30 days. It completed 72 flights across nearly three years.",
+        "quote": [
+          "Designed to be a technology demonstration that would make no more than five test flights in 30 days",
+          "the helicopter eventually completed 72 flights across nearly three years"
+        ],
+        "page": "ingenuity"
+      },
+      "quiz": [
+        {
+          "q": "How many flights did Ingenuity complete?",
+          "options": [
+            "72",
+            "5",
+            "30"
+          ],
+          "answer": 0,
+          "quote": "the helicopter eventually completed 72 flights",
+          "page": "ingenuity"
+        },
+        {
+          "q": "What was the first powered, controlled flight on another planet?",
+          "options": [
+            "Ingenuity, on 19 April 2021",
+            "Viking 1, in 1976",
+            "Phoenix, in 2008"
+          ],
+          "answer": 0,
+          "quote": "On April 19, 2021",
+          "page": "ingenuity"
+        }
+      ]
+    },
+    {
+      "id": "surveyor-3",
+      "name": "Surveyor 3",
+      "short": "S3",
+      "kind": "Lander",
+      "place": "Moon",
+      "place_detail": "Oceanus Procellarum",
+      "place_quote": "in the southeastern region of Oceanus Procellarum",
+      "pages": [
+        {
+          "key": "surveyor-3",
+          "label": "NASA Science: Surveyor 3",
+          "url": "https://science.nasa.gov/mission/surveyor-3/"
+        }
+      ],
+      "last_seen": {
+        "date": "1967-05-04",
+        "text": "Last contact 4 May 1967",
+        "quote": "May 4, 1967: Last contact with spacecraft",
+        "page": "surveyor-3"
+      },
+      "coords": {
+        "lat": -3,
+        "lon": 23.41,
+        "ew": "W",
+        "quote": "3 degrees south latitude and 23.41 degrees west longitude",
+        "page": "surveyor-3"
+      },
+      "image": {
+        "file": "img/surveyor-3.jpg",
+        "alt": "Black and white photo of an astronaut next to the Surveyor 3 lander on the Moon. The Apollo 12 lunar module is far away in the background.",
+        "caption": "Photographed during the second Apollo 12 moonwalk: two U.S. spacecraft on the Moon.",
+        "credit": "NASA"
+      },
+      "opening": [
+        {
+          "t": "voice",
+          "text": "Hello from the Moon. Surveyor 3 here."
+        },
+        {
+          "t": "note",
+          "text": "Tap a question. Every fact has a source link."
+        }
+      ],
+      "questions": [
+        {
+          "id": "land",
+          "label": "How was your landing?",
+          "page": "surveyor-3",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "My engine did not cut off on time, so I bounced off the surface twice, first to 33 feet (10 meters), then to 10 feet (3 meters).",
+              "quote": "Surveyor 3 bounced off the lunar surface twice, the first time to a height of 33 feet (10 meters) and the second time, to 10 feet (3 meters)."
+            },
+            {
+              "t": "fact",
+              "text": "The third time I settled down to a soft landing on 20 April 1967.",
+              "quote": "settled down to a soft-landing at 00:04:17 UT April 20, 1967"
+            }
+          ]
+        },
+        {
+          "id": "pics",
+          "label": "How many pictures did you take?",
+          "page": "surveyor-3",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "Less than an hour after landing I began transmitting the first of 6,326 TV pictures of the surrounding areas.",
+              "quote": "began transmitting the first of 6,326 TV pictures of the surrounding areas"
+            }
+          ]
+        },
+        {
+          "id": "dig",
+          "label": "Did you dig?",
+          "page": "surveyor-3",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "On commands from Earth my probe dug four trenches and performed four bearing tests and thirteen impact tests.",
+              "quote": "the probe dug four trenches and performed four bearing tests and thirteen impact tests"
+            },
+            {
+              "t": "fact",
+              "text": "Scientists concluded that lunar soil had a consistency similar to wet sand.",
+              "quote": "lunar soil had a consistency similar to wet sand"
+            },
+            {
+              "t": "fact",
+              "text": "It was solid enough to support an Apollo Lunar Module.",
+              "quote": "solid enough to support an Apollo Lunar Module"
+            }
+          ]
+        },
+        {
+          "id": "stop",
+          "label": "When did you go quiet?",
+          "page": "surveyor-3",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "The last contact with me was on 4 May 1967, two days after the lunar night began.",
+              "quote": "The last contact with the spacecraft was May 4, 1967, two days after the lunar night began."
+            },
+            {
+              "t": "calc",
+              "from": "1967-04-20",
+              "to": "1967-05-04",
+              "text": "From landing to that day is about {span}.",
+              "quote": [
+                "April 20, 1967",
+                "The last contact with the spacecraft was May 4, 1967"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "visit",
+          "label": "Did anyone visit you?",
+          "page": "surveyor-3",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "Yes. Apollo 12 astronauts Charles Conrad, Jr. and Alan L. Bean landed approximately 197 yards (180 meters) from me.",
+              "quote": "Apollo 12 astronauts Charles Conrad, Jr. and Alan L. Bean landed the Intrepid Lunar Module approximately 197 yards (180 meters) from the inactive Surveyor 3 lander"
+            },
+            {
+              "t": "fact",
+              "text": "On 19 November 1969 they walked over and recovered parts, including my soil scoop and camera system.",
+              "quote": "on Nov. 19, 1969, the astronauts walked over to Surveyor 3 and recovered parts, including the soil scoop and camera system"
+            },
+            {
+              "t": "fact",
+              "text": "That let scientists study the effects of nearly two-and-a-half years on the Moon's surface.",
+              "quote": "nearly two-and-a-half years of exposure"
+            }
+          ]
+        },
+        {
+          "id": "heavy",
+          "label": "How heavy are you?",
+          "page": "surveyor-3",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "My spacecraft mass was 2,200 pounds (997.9 kilograms).",
+              "quote": "Spacecraft Mass 2,200 pounds (997.9 kilograms)"
+            }
+          ]
+        }
+      ],
+      "card": {
+        "title": "The Moon is solid enough",
+        "text": "Surveyor 3's digging showed the lunar surface was solid enough to hold the weight of an Apollo lunar module.",
+        "quote": "the lunar surface was solid enough to hold the weight of an Apollo lunar module",
+        "page": "surveyor-3"
+      },
+      "quiz": [
+        {
+          "q": "What was lunar soil like, according to Surveyor 3's tests?",
+          "options": [
+            "Similar to wet sand",
+            "Like ice",
+            "Like soft powder with no strength"
+          ],
+          "answer": 0,
+          "quote": "lunar soil had a consistency similar to wet sand",
+          "page": "surveyor-3"
+        },
+        {
+          "q": "What happened to Surveyor 3 parts in November 1969?",
+          "options": [
+            "Apollo 12 astronauts recovered some",
+            "They were left untouched",
+            "They were buried"
+          ],
+          "answer": 0,
+          "quote": [
+            "Apollo 12 astronauts Charles Conrad",
+            "recovered parts, including the soil scoop and camera system"
+          ],
+          "page": "surveyor-3"
+        }
+      ]
+    },
+    {
+      "id": "alsep",
+      "name": "Apollo 12 ALSEP",
+      "short": "AL",
+      "kind": "Science station",
+      "place": "Moon",
+      "place_detail": "Oceanus Procellarum",
+      "place_quote": "in the Oceanus Procellarum area",
+      "pages": [
+        {
+          "key": "alsep",
+          "label": "NSSDCA: Apollo 12 Lunar Module / ALSEP",
+          "url": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-099C"
+        }
+      ],
+      "last_seen": {
+        "date": "1977-09-30",
+        "text": "Shut down 30 Sep 1977",
+        "quote": "shut down along with the other ALSEP stations on 30 September 1977",
+        "page": "alsep"
+      },
+      "coords": {
+        "lat": -3.0094,
+        "lon": 23.4246,
+        "ew": "W",
+        "quote": "located at 3.0094 S latitude, 23.4246 W longitude",
+        "page": "alsep"
+      },
+      "image": {
+        "file": "img/apollo12-lm.jpg",
+        "alt": "The Apollo 12 lunar module flying above the grey, cratered surface of the Moon, with black space above.",
+        "caption": "The Apollo 12 lunar module that carried the ALSEP to the Moon, shown on the ALSEP's NSSDCA page. That page has no photo of the ALSEP itself.",
+        "credit": "NASA"
+      },
+      "opening": [
+        {
+          "t": "voice",
+          "text": "Beep. Hello from the Moon. I am the ALSEP."
+        },
+        {
+          "t": "note",
+          "text": "ALSEP means Apollo Lunar Surface Experiments Package. Tap a question."
+        }
+      ],
+      "questions": [
+        {
+          "id": "what",
+          "label": "What are you?",
+          "page": "alsep",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "I am a set of scientific instruments placed at the landing site by the astronauts.",
+              "quote": "consisted of a set of scientific instruments emplaced at the landing site by the astronauts"
+            },
+            {
+              "t": "fact",
+              "text": "My central station supplied power to the instruments and sent their data to Earth.",
+              "quote": "The instruments were arrayed around a central station which supplied power to run the instruments and communications so data collected by the experiments could be relayed to Earth."
+            }
+          ]
+        },
+        {
+          "id": "who",
+          "label": "Who set you up?",
+          "page": "alsep",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "Commander Charles P. Conrad and Alan L. Bean took two Moon walks. They set me up.",
+              "quote": [
+                "Conrad and Bean took two Moon walks",
+                "All ALSEP instruments were deployed on the surface by the astronauts"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "instr",
+          "label": "What instruments do you have?",
+          "page": "alsep",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "A passive seismometer, to measure seismic activity and physical properties of the lunar crust and interior.",
+              "quote": "(1) a passive seismometer, designed to measure seismic activity and physical properties of the lunar crust and interior"
+            },
+            {
+              "t": "fact",
+              "text": "A lunar surface magnetometer, to measure the magnetic field at the lunar surface.",
+              "quote": "(5) a lunar surface magnetometer (LSM), designed to measure the magnetic field at the lunar surface"
+            },
+            {
+              "t": "fact",
+              "text": "A lunar dust detector, to measure dust accumulation.",
+              "quote": "(4) a lunar dust detector, to measure dust accumulation"
+            }
+          ]
+        },
+        {
+          "id": "power",
+          "label": "What powers you?",
+          "page": "alsep",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "A SNAP-27 radioisotope generator produced my power.",
+              "quote": "The SNAP-27 model RTG produced the power to run the ALSEP operations."
+            },
+            {
+              "t": "fact",
+              "text": "Its fuel is plutonium-238, which decays with a half-life of 89.6 years.",
+              "quote": "Plutonium-238 decays with a half-life of 89.6 years"
+            },
+            {
+              "t": "fact",
+              "text": "My central station was a 25 kg box.",
+              "quote": "The central station was a 25 kg box"
+            }
+          ]
+        },
+        {
+          "id": "stop",
+          "label": "When were you switched off?",
+          "page": "alsep",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "My central station was turned on at 14:21 UT on 19 November 1969.",
+              "quote": "was turned on at 14:21 UT on 19 November 1969"
+            },
+            {
+              "t": "fact",
+              "text": "It was shut down along with the other ALSEP stations on 30 September 1977.",
+              "quote": "shut down along with the other ALSEP stations on 30 September 1977"
+            },
+            {
+              "t": "calc",
+              "from": "1969-11-19",
+              "to": "1977-09-30",
+              "text": "From switch-on to switch-off is about {span}.",
+              "quote": [
+                "was turned on at 14:21 UT on 19 November 1969",
+                "shut down along with the other ALSEP stations on 30 September 1977"
+              ]
+            },
+            {
+              "t": "note",
+              "text": "This page does not say why the stations were shut down."
+            }
+          ]
+        }
+      ],
+      "card": {
+        "title": "Science left on the Moon",
+        "text": "The Apollo 12 central station was turned on on 19 November 1969 and shut down on 30 September 1977.",
+        "quote": [
+          "The Apollo 12 ALSEP instruments consisted of",
+          "was turned on at 14:21 UT on 19 November 1969 and shut down along with the other ALSEP stations on 30 September 1977"
+        ],
+        "page": "alsep"
+      },
+      "quiz": [
+        {
+          "q": "What fuel did the ALSEP power generator use?",
+          "options": [
+            "Plutonium-238",
+            "Diesel",
+            "Wood"
+          ],
+          "answer": 0,
+          "quote": "Plutonium-238 decays with a half-life of 89.6 years",
+          "page": "alsep"
+        },
+        {
+          "q": "How many Moon walks did Conrad and Bean take?",
+          "options": [
+            "Two",
+            "Five",
+            "One"
+          ],
+          "answer": 0,
+          "quote": "Conrad and Bean took two Moon walks",
+          "page": "alsep"
+        }
+      ]
+    },
+    {
+      "id": "apollo12-lm",
+      "name": "Intrepid",
+      "short": "LM",
+      "kind": "Apollo 12 lunar module",
+      "place": "Moon",
+      "place_detail": "Oceanus Procellarum",
+      "place_quote": "in the Oceanus Procellarum area",
+      "pages": [
+        {
+          "key": "alsep",
+          "label": "NSSDCA: Apollo 12 Lunar Module / ALSEP",
+          "url": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-099C"
+        }
+      ],
+      "last_seen": {
+        "date": "1969-11-20",
+        "text": "Crew left 20 Nov 1969",
+        "quote": [
+          "on 19 November 1969 in the Oceanus Procellarum area",
+          "The LM lifted off on 20 November"
+        ],
+        "page": "alsep"
+      },
+      "coords": {
+        "lat": -3.0128,
+        "lon": 23.4219,
+        "ew": "W",
+        "quote": "at 3.0128 S latitude, 23.4219 W longitude",
+        "page": "alsep"
+      },
+      "image": {
+        "file": "img/apollo12-lm.jpg",
+        "alt": "The Apollo 12 lunar module flying above the grey, cratered surface of the Moon, with black space above.",
+        "caption": "The Apollo 12 lunar module above the Moon, shown on its NSSDCA page.",
+        "credit": "NASA"
+      },
+      "opening": [
+        {
+          "t": "voice",
+          "text": "Hello from the Ocean of Storms. I am Intrepid, a lunar module from the Apollo program."
+        },
+        {
+          "t": "note",
+          "text": "I only say what my NSSDCA page says. Tap a question."
+        }
+      ],
+      "questions": [
+        {
+          "id": "who",
+          "label": "Who flew in you?",
+          "page": "alsep",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "I carried two astronauts: Commander Charles P. \"Pete\" Conrad and lunar module pilot Alan L. Bean.",
+              "quote": "It carried two astronauts, Commander Charles P. \"Pete\" Conrad and LM pilot Alan L. Bean"
+            },
+            {
+              "t": "fact",
+              "text": "They were the third and fourth people to walk on the Moon.",
+              "quote": "the third and fourth men to walk on the Moon"
+            },
+            {
+              "t": "fact",
+              "text": "I was the second crewed vehicle to land on the Moon.",
+              "quote": "was the second crewed vehicle to land on the Moon"
+            }
+          ]
+        },
+        {
+          "id": "land",
+          "label": "Where did you land?",
+          "page": "alsep",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "I landed on 19 November 1969 in the Oceanus Procellarum area, at 3.0128 S latitude and 23.4219 W longitude.",
+              "quote": "on 19 November 1969 in the Oceanus Procellarum area at 3.0128 S latitude, 23.4219 W longitude"
+            },
+            {
+              "t": "fact",
+              "text": "That was within about 180 meters of Surveyor 3, which had landed on April 20, 1967.",
+              "quote": "within about 180 meters of the Surveyor 3 spacecraft, which had landed on April 20, 1967"
+            },
+            {
+              "t": "calc",
+              "from": "1967-04-20",
+              "to": "1969-11-19",
+              "text": "So Surveyor 3 had waited {span} for visitors.",
+              "quote": [
+                "which had landed on April 20, 1967",
+                "on 19 November 1969 in the Oceanus Procellarum area"
+              ]
+            },
+            {
+              "t": "voice",
+              "text": "Imagine parking right next to an old friend."
+            }
+          ]
+        },
+        {
+          "id": "built",
+          "label": "How are you built?",
+          "page": "alsep",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "I am a two-stage vehicle. My descent stage is an octagonal prism 4.2 meters across and 1.7 m thick.",
+              "quote": [
+                "The lunar module was a two-stage vehicle",
+                "an octagonal prism 4.2 meters across and 1.7 m thick"
+              ]
+            },
+            {
+              "t": "fact",
+              "text": "Four landing legs with round footpads held me up.",
+              "quote": "Four landing legs with round footpads were mounted on the sides of the descent stage"
+            },
+            {
+              "t": "fact",
+              "text": "There were no seats inside me.",
+              "quote": "There were no seats in the LM."
+            },
+            {
+              "t": "voice",
+              "text": "Standing room only!"
+            }
+          ]
+        },
+        {
+          "id": "walks",
+          "label": "What did the astronauts do?",
+          "page": "alsep",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "Conrad and Bean took two Moon walks of a total duration of 7 hours 45 minutes, covering 1.35 km.",
+              "quote": "Conrad and Bean took two Moon walks of a total duration of 7 hours 45 minutes covering a total traverse distance of 1.35 km"
+            },
+            {
+              "t": "fact",
+              "text": "They visited Surveyor 3 and brought back about 10 kg of its parts.",
+              "quote": [
+                "visited the Surveyor 3 spacecraft",
+                "bringing back about 10 kg of parts for later examination on Earth"
+              ]
+            },
+            {
+              "t": "fact",
+              "text": "They collected a total of 34.35 kg of rock and soil samples.",
+              "quote": "They collected a total of 34.35 kg of rock and soil samples"
+            },
+            {
+              "t": "fact",
+              "text": "The TV camera was pointed at the Sun by mistake and stopped working.",
+              "quote": "The TV camera was inadvertantly pointed towards the Sun when it was being set up and the vidicon tube was damaged rendering the camera inoperable."
+            }
+          ]
+        },
+        {
+          "id": "left",
+          "label": "What was left behind?",
+          "page": "alsep",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "My descent stage was the launch pad for my ascent stage, and it was left behind on the Moon.",
+              "quote": "The descent stage served as a platform for launching the ascent stage and was left behind on the Moon."
+            },
+            {
+              "t": "fact",
+              "text": "My ascent stage lifted off on 20 November, after 31 hours 31 minutes on the Moon.",
+              "quote": "The LM lifted off on 20 November at 14:25:47 UT (9:25 a.m. EST) after spending 31 hours 31 minutes on the Moon."
+            },
+            {
+              "t": "voice",
+              "text": "Half of me stayed. Half of me flew."
+            }
+          ]
+        },
+        {
+          "id": "crash",
+          "label": "What happened to your top half?",
+          "page": "alsep",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "After the crew moved to the command module, my ascent stage was let go and crashed into the Moon on purpose.",
+              "quote": "the LM was jettisoned at 20:21:30 and intentionally crashed into the Moon"
+            },
+            {
+              "t": "fact",
+              "text": "It hit at 3.94 S, 338.80 E, about 60 km from the seismic station at the landing site.",
+              "quote": "striking at 3.94 S, 338.80 E, about 60 km from the seismic station at the Apollo 12 landing site"
+            },
+            {
+              "t": "fact",
+              "text": "That made the first recorded artificial moonquake.",
+              "quote": "creating the first recorded artificial moonquake"
+            },
+            {
+              "t": "voice",
+              "text": "Even my crash was useful for science."
+            }
+          ]
+        }
+      ],
+      "card": {
+        "title": "The first artificial moonquake",
+        "text": "The ascent stage was crashed into the Moon on purpose, about 60 km from the seismic station, creating the first recorded artificial moonquake.",
+        "quote": [
+          "intentionally crashed into the Moon",
+          "about 60 km from the seismic station at the Apollo 12 landing site, creating the first recorded artificial moonquake"
+        ],
+        "page": "alsep"
+      },
+      "quiz": [
+        {
+          "q": "Were there seats inside the lunar module?",
+          "options": [
+            "No, there were no seats",
+            "Yes, two seats",
+            "Yes, four seats"
+          ],
+          "answer": 0,
+          "quote": "There were no seats in the LM.",
+          "page": "alsep"
+        },
+        {
+          "q": "How far from Surveyor 3 did Intrepid land?",
+          "options": [
+            "About 18 km",
+            "About 180 meters",
+            "About 1,800 km"
+          ],
+          "answer": 1,
+          "quote": "within about 180 meters of the Surveyor 3 spacecraft",
+          "page": "alsep"
+        }
+      ]
+    },
+    {
+      "id": "lrv-15",
+      "name": "Lunar Rover",
+      "short": "LR",
+      "kind": "Apollo 15 rover",
+      "place": "Moon",
+      "place_detail": "Hadley-Apennine, Mare Imbrium",
+      "place_quote": "in the Mare Imbrium region at the foot of the Apennine mountain range",
+      "pages": [
+        {
+          "key": "apollo-15-lm",
+          "label": "NSSDCA: Apollo 15 Lunar Module / ALSEP",
+          "url": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1971-063C"
+        },
+        {
+          "key": "lrv",
+          "label": "NSSDCA: The Apollo Lunar Roving Vehicle",
+          "url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/apollo_lrv.html"
+        }
+      ],
+      "last_seen": {
+        "date": "1971-08-02",
+        "text": "Last drive 2 Aug 1971",
+        "quote": [
+          "on 30 July 1971",
+          "On the third EVA on 2 August from 08:52:14 UT to 13:42:04 UT the LRV was driven a total of 5.1 km"
+        ],
+        "page": "apollo-15-lm"
+      },
+      "coords": {
+        "lat": 26.13239,
+        "lon": 3.6333,
+        "ew": "E",
+        "quote": "at 26.13239 N latitude, 3.63330 E longitude",
+        "page": "apollo-15-lm",
+        "note": "Landing site of the Apollo 15 lunar module. The rover drove within 5 km of it"
+      },
+      "image": {
+        "file": "img/lrv-15.jpg",
+        "alt": "The Apollo 15 lunar rover parked on grey lunar soil, with a dish antenna on a mast, two seats and wheel tracks in the dust.",
+        "caption": "The Apollo 15 Lunar Roving Vehicle on the Moon, shown on the NSSDCA rover page.",
+        "credit": "NASA"
+      },
+      "opening": [
+        {
+          "t": "voice",
+          "text": "Beep beep! I am the Lunar Rover from Apollo fifteen."
+        },
+        {
+          "t": "note",
+          "text": "I only say what my NSSDCA pages say. Tap a question."
+        }
+      ],
+      "questions": [
+        {
+          "id": "what",
+          "label": "What are you?",
+          "page": "lrv",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "I am an electric vehicle built to drive on the Moon, so the Apollo astronauts could go farther from their lander.",
+              "quote": [
+                "The Lunar Roving Vehicle (LRV) was an electric vehicle designed to operate in the low-gravity vacuum of the Moon",
+                "allowing the Apollo astronauts to extend the range of their surface extravehicular activities"
+              ]
+            },
+            {
+              "t": "fact",
+              "text": "Three rovers were driven on the Moon: on Apollo 15, 16 and 17.",
+              "quote": "Three LRVs were driven on the Moon, one on Apollo 15 by astronauts David Scott and Jim Irwin, one on Apollo 16 by John Young and Charles Duke, and one on Apollo 17 by Gene Cernan and Harrison Schmitt."
+            }
+          ]
+        },
+        {
+          "id": "who",
+          "label": "Who drove you?",
+          "page": "lrv",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "Astronauts David Scott and Jim Irwin drove me on Apollo 15.",
+              "quote": "one on Apollo 15 by astronauts David Scott and Jim Irwin"
+            },
+            {
+              "t": "fact",
+              "text": "I was used on three traverses, one per day.",
+              "quote": "Each rover was used on three traverses, one per day over the three day course of each mission."
+            },
+            {
+              "t": "voice",
+              "text": "A new trip every day. What a road trip."
+            }
+          ]
+        },
+        {
+          "id": "far",
+          "label": "How far did you drive?",
+          "page": "lrv",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "On Apollo 15 I was driven a total of 27.8 km in 3 hours, 2 minutes of driving time.",
+              "quote": "On Apollo 15 the LRV was driven a total of 27.8 km in 3 hours, 2 minutes of driving time."
+            },
+            {
+              "t": "fact",
+              "text": "My longest single trip was 12.5 km, and I went at most 5.0 km from the lunar module.",
+              "quote": "The longest single traverse was 12.5 km and the maximum range from the LM was 5.0 km."
+            }
+          ]
+        },
+        {
+          "id": "built",
+          "label": "How are you built?",
+          "page": "lrv",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "I had a mass of 210 kg and could carry another 490 kg.",
+              "quote": "The Lunar Roving Vehicle had a mass of 210 kg and was designed to hold a payload of an additional 490 kg on the lunar surface."
+            },
+            {
+              "t": "fact",
+              "text": "My frame folded in the middle, so I could hang folded up inside the lunar module.",
+              "quote": "hinged in the center so it could be folded up and hung in the Lunar Module quad 1 bay"
+            },
+            {
+              "t": "fact",
+              "text": "My tyres were woven from zinc-coated steel strands, and each wheel had its own electric motor.",
+              "quote": [
+                "tire made of zinc coated woven 0.083 cm diameter steel strands",
+                "Each wheel had its own electric drive"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "drive",
+          "label": "How did you steer?",
+          "page": "lrv",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "A T-shaped hand controller between the two seats controlled my motors and brakes.",
+              "quote": "A T-shaped hand controller situated between the two seats controlled the four drive motors, two steering motors and brakes."
+            },
+            {
+              "t": "fact",
+              "text": "Pushing the stick forward drove me forward. Pulling it back worked the brakes.",
+              "quote": [
+                "Moving the stick forward powered the LRV forward",
+                "pulling backwards activated the brakes"
+              ]
+            },
+            {
+              "t": "voice",
+              "text": "No steering wheel. Just one stick."
+            }
+          ]
+        },
+        {
+          "id": "power",
+          "label": "What powered you?",
+          "page": "lrv",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "Two 36-volt silver-zinc batteries that could not be recharged.",
+              "quote": "Power was provided by two 36-volt silver-zinc potassium hydroxide non-rechargeable batteries"
+            },
+            {
+              "t": "fact",
+              "text": "I was developed in only 17 months.",
+              "quote": "The LRV was developed in only 17 months"
+            }
+          ]
+        },
+        {
+          "id": "end",
+          "label": "What happened at the end?",
+          "page": "apollo-15-lm",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "The lunar module carried me to the Moon. It landed on 30 July 1971 at the foot of the Apennine mountains.",
+              "quote": [
+                "The LM also carried a Lunar Roving Vehicle (LRV)",
+                "on 30 July 1971 in the Mare Imbrium region at the foot of the Apennine mountain range"
+              ]
+            },
+            {
+              "t": "fact",
+              "text": "On the third moonwalk, on 2 August, I was driven 5.1 km.",
+              "quote": "On the third EVA on 2 August from 08:52:14 UT to 13:42:04 UT the LRV was driven a total of 5.1 km"
+            },
+            {
+              "t": "fact",
+              "text": "Then the lunar module lifted off the Moon on 2 August.",
+              "quote": "The LM lifted off the Moon on 2 August at 17:11:22 UT"
+            },
+            {
+              "t": "calc",
+              "from": "1971-07-30",
+              "to": "1971-08-02",
+              "text": "From landing to my last drive: {span}.",
+              "quote": [
+                "on 30 July 1971",
+                "On the third EVA on 2 August"
+              ]
+            },
+            {
+              "t": "note",
+              "text": "This page does not say in words where I was parked at the end."
+            }
+          ]
+        }
+      ],
+      "card": {
+        "title": "A car on the Moon",
+        "text": "On Apollo 15 the rover was driven a total of 27.8 km.",
+        "quote": "On Apollo 15 the LRV was driven a total of 27.8 km",
+        "page": "lrv"
+      },
+      "quiz": [
+        {
+          "q": "How many rovers were driven on the Moon?",
+          "options": [
+            "One",
+            "Three",
+            "Ten"
+          ],
+          "answer": 1,
+          "quote": "Three LRVs were driven on the Moon",
+          "page": "lrv"
+        },
+        {
+          "q": "What powered the rover?",
+          "options": [
+            "Batteries",
+            "A petrol engine",
+            "Solar sails"
+          ],
+          "answer": 0,
+          "quote": "Power was provided by two 36-volt silver-zinc potassium hydroxide non-rechargeable batteries",
+          "page": "lrv"
+        }
+      ]
+    },
+    {
+      "id": "pioneer-10",
+      "name": "Pioneer 10",
+      "short": "P10",
+      "kind": "Flyby spacecraft",
+      "place": "Deep space",
+      "place_detail": "Leaving the solar system",
+      "place_quote": "Pioneer 10 is heading out of the solar system",
+      "pages": [
+        {
+          "key": "pioneer-10",
+          "label": "NASA Science: Pioneer 10",
+          "url": "https://science.nasa.gov/mission/pioneer-10/"
+        }
+      ],
+      "last_seen": {
+        "date": "2003-01-23",
+        "text": "Last signal 23 Jan 2003",
+        "quote": "Jan. 23, 2003: Pioneer 10",
+        "page": "pioneer-10"
+      },
+      "coords": null,
+      "image": {
+        "file": "img/pioneer-10.jpg",
+        "alt": "A painting of the Pioneer 10 spacecraft with its dish and long arms in front of the planet Jupiter.",
+        "caption": "Painting of Pioneer 10 at Jupiter, from the mission page.",
+        "credit": "NASA (illustration, from the mission page)"
+      },
+      "opening": [
+        {
+          "t": "voice",
+          "text": "Signal received. Pioneer 10 calling from very far away."
+        },
+        {
+          "t": "note",
+          "text": "Tap a question. Every fact has a source link."
+        }
+      ],
+      "questions": [
+        {
+          "id": "why",
+          "label": "Why were you built?",
+          "page": "pioneer-10",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "I was NASA's first mission to the outer planets.",
+              "quote": "mission to the outer planets"
+            },
+            {
+              "t": "fact",
+              "text": "I was designed for a 21-month mission to fly by Jupiter. I lasted more than 30 years.",
+              "quote": "Originally designed for a 21-month mission to fly by Jupiter, Pioneer 10 lasted more than 30 years."
+            }
+          ]
+        },
+        {
+          "id": "firsts",
+          "label": "What were your firsts?",
+          "page": "pioneer-10",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "I was the first vehicle placed on a path to escape the solar system into interstellar space.",
+              "quote": "the first vehicle placed on a trajectory to escape the solar system into interstellar space"
+            },
+            {
+              "t": "fact",
+              "text": "I was the first to fly through the asteroid belt and the first to fly past Jupiter.",
+              "quote": "the first to fly through the asteroid belt; the first to fly past Jupiter"
+            },
+            {
+              "t": "fact",
+              "text": "I crossed the orbit of Neptune on 13 June 1983, the first human-made object to go beyond the furthest planet.",
+              "quote": "crossed the orbit of Neptune (then the outermost planet) on June 13, 1983, thus becoming the first human-made object to go beyond the furthest planet"
+            }
+          ]
+        },
+        {
+          "id": "jupiter",
+          "label": "What did you do at Jupiter?",
+          "page": "pioneer-10",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "My closest approach was on 4 December 1973, at a range of 81,000 miles (130,354 kilometers).",
+              "quote": "closest approach to Jupiter was at 02:26 UT Dec. 4, 1973, when the spacecraft raced by the planet at a range of 81,000 miles (130,354 kilometers)"
+            },
+            {
+              "t": "fact",
+              "text": "I took about 500 pictures of Jupiter's atmosphere, clearly showing landmarks such as the Great Red Spot.",
+              "quote": [
+                "took about 500 pictures of Jupiter",
+                "clearly showing such landmarks as the Great Red Spot"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "plaque",
+          "label": "What is the plaque?",
+          "page": "pioneer-10",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "I carry an aluminum plaque with diagrams of a man and a woman, the solar system, and my location relative to 14 pulsars.",
+              "quote": "Pioneer 10 carries an aluminum plaque with diagrams of a man and a woman, the solar system, and its location relative to 14 pulsars"
+            }
+          ]
+        },
+        {
+          "id": "stop",
+          "label": "When was your last signal?",
+          "page": "pioneer-10",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "My last signal was received on 23 January 2003, from a distance of 7.6 billion miles (12.23 billion kilometers).",
+              "quote": [
+                "Pioneer 10 sent its last signal to Earth in January 2003 from a distance of 7.6 billion miles (12.23 billion kilometers)",
+                "Jan. 23, 2003: Pioneer 10"
+              ]
+            },
+            {
+              "t": "fact",
+              "text": "It took 11 hours and 20 minutes to reach Earth.",
+              "quote": "That signal took 11 hours and 20 minutes to reach Earth."
+            },
+            {
+              "t": "fact",
+              "text": "My RTG power source had decayed, so there was insufficient power for the radio transmitter.",
+              "quote": "RTG power source had decayed, thus delivering insufficient power to the radio transmitter"
+            },
+            {
+              "t": "fact",
+              "text": "A final attempt to contact me on 4 March 2006 failed.",
+              "quote": "A final attempt to contact Pioneer 10 on March 4, 2006, failed."
+            },
+            {
+              "t": "calc",
+              "from": "1972-03-02",
+              "to": "2003-01-23",
+              "text": "From launch to that last signal is about {span}.",
+              "quote": [
+                "March 2, 1972",
+                "Jan. 23, 2003: Pioneer 10"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "where",
+          "label": "Where are you going?",
+          "page": "pioneer-10",
+          "reply": [
+            {
+              "t": "fact",
+              "text": "I am generally heading toward the red star Aldebaran, the eye of the Taurus constellation.",
+              "quote": "The spacecraft is generally heading in the direction of the red star Aldebaran which forms the eye of the Taurus constellation."
+            },
+            {
+              "t": "fact",
+              "text": "I am expected to pass by Aldebaran in about two million years.",
+              "quote": "It is expected to pass by Aldebaran in about two million years."
+            }
+          ]
+        }
+      ],
+      "card": {
+        "title": "A signal from 7.6 billion miles",
+        "text": "Pioneer 10 was designed for 21 months and lasted more than 30 years. Its last signal came from 7.6 billion miles away.",
+        "quote": [
+          "Originally designed for a 21-month mission to fly by Jupiter, Pioneer 10 lasted more than 30 years.",
+          "Pioneer 10 sent its last signal to Earth in January 2003 from a distance of 7.6 billion miles"
+        ],
+        "page": "pioneer-10"
+      },
+      "quiz": [
+        {
+          "q": "What was Pioneer 10 originally designed for?",
+          "options": [
+            "A 21-month Jupiter flyby mission",
+            "A 30-year mission",
+            "A Moon landing"
+          ],
+          "answer": 0,
+          "quote": "Originally designed for a 21-month mission to fly by Jupiter",
+          "page": "pioneer-10"
+        },
+        {
+          "q": "Which star is Pioneer 10 generally heading toward?",
+          "options": [
+            "Aldebaran",
+            "The Sun",
+            "Polaris"
+          ],
+          "answer": 0,
+          "quote": "heading in the direction of the red star Aldebaran",
+          "page": "pioneer-10"
+        }
+      ]
+    }
+  ]
+}
